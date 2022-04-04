@@ -1,0 +1,27 @@
+.product-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.product-container{
+    margin: 50px;
+}
+.product-details{
+    padding: 50px;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+.product-name h2{
+    font-size: 65px;
+    font-weight: 800px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: rgb(116, 49, 116);
+}
+.product-details p{
+    font-size: 20px;
+    font-weight: 600px;
+}
+.product-image img{
+    width: 640px;
+    height: 620px;
+}
