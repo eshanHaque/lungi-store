@@ -25,3 +25,7 @@
     width: 640px;
     height: 620px;
 }
+.reviews-container h2{
+    text-align: center;
+    font-size: 40px;
+}

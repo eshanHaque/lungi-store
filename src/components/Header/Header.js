@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 const Header = () => {
     return (
-        <div>
+        <div className='nav-container'>
             <nav>
                 <Link to="/home">Home</Link>
                 <Link to="/review">Review</Link>
