@@ -1,12 +1,14 @@
 import React from 'react';
-
+import useReviewHook from '../../hooks/useReviewHook';
+import './CustomerReview.css'
 const CustomerReview = (props) => {
     const {name, description, rating} = props.review;
+    
     return (
-        <div>
-            <h4>{name}</h4>
+        <div className='review-container'>
+            <h4 className='customer-name'>{name}</h4>
             <p>{description}</p>
-            <p>{rating}</p>
+            <p className='rating'>Rating: <span className='rating-number'>{rating}</span></p>
         </div>
     );
 };

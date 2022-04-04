@@ -25,7 +25,17 @@
     width: 640px;
     height: 620px;
 }
-.reviews-container h2{
+.reviews-container{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+}
+.review-title{
     text-align: center;
     font-size: 40px;
+    background: -webkit-linear-gradient(rgb(209, 57, 209), rgb(62, 20, 110));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

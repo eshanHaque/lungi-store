@@ -19,9 +19,9 @@ const Home = () => {
                     <img src={img} alt="" />
                 </div>
             </div>
-
+             
+            <h2 className='review-title'>Customer Review</h2>
             <div className='reviews-container'>
-                <h2>Customer Review</h2>
                 {
                     reviews.map(review => <CustomerReview
                         key={review._id}
