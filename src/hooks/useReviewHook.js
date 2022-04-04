@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react"
 
-const reviewHook = () =>{
+const useReviewHook = () =>{
     const [reviews, setReviews] = useState([]);
     useEffect( () =>{
-        fetch('review.json')
+        fetch('reviews.json')
         .then(res => res.json())
         .then(data => setReviews(data));
     },[]);
     return [reviews, setReviews];
 }
 
-export default reviewHook;
+export default useReviewHook;

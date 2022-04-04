@@ -1,7 +1,10 @@
 import React from 'react';
+import useReviewHook from '../../hooks/useReviewHook';
 import img from '../../images/lungi.jpg';
+import CustomerReview from '../CustomerReview/CustomerReview';
 import './Home.css';
 const Home = () => {
+    const [reviews, setReviews] = useReviewHook();
     return (
         <div>
             <div className='product-container'>
@@ -19,6 +22,12 @@ const Home = () => {
 
             <div className='reviews-container'>
                 <h2>Customer Review</h2>
+                {
+                    reviews.map(review => <CustomerReview
+                        key={review._id}
+                        review={review}
+                    ></CustomerReview>)
+                }
             </div>
         </div>
     );
