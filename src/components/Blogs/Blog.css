@@ -1,0 +1,17 @@
+.blogs-container{
+    margin: 150px;
+    text-align: left;
+}
+.question-ans{
+    padding: 50px;
+    height: 250px;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.blogs-ques{
+    font-size: 40px;
+}
+
+.blogs-ques-ans{
+    font-size: 25px;
+}
